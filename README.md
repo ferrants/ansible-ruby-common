@@ -32,7 +32,9 @@ These variables are blank by default (i.e. they do not change the GC settings at
 
 **Variables that are set by the role itself (and that shouldn't need to be modified)**
 
-> ruby_dependencies: Controls the installation of dependencies that are necessary in order to properly compile Ruby. Includes libreadline-dev, libssl-dev, libyaml-dev, and zlib1g-dev by default.
+> ruby_apt_dependencies: Controls the installation of apt dependencies that are necessary in order to properly compile Ruby. Includes libreadline-dev, libssl-dev, libyaml-dev, and zlib1g-dev by default.
+
+> ruby_yum_dependencies: Controls the installation of yum dependencies that are necessary in order to properly compile Ruby. Includes readline-devel, openssl-devel, libyaml-devel, zlib-devel by default.
 
 > ruby_symlinks: Controls which binaries will be symlinked into /usr/local/bin. Includes bundle, erb, gem, irb, rake, rdoc, ri, ruby, and testrb by default.
 
